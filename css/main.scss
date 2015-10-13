@@ -25,13 +25,38 @@ $main-color: green;
     }
 }
 
+p {
+    margin: 0 0 5px 0;
+}
+
 .icon {
     margin-right: 10px;
     color: $main-color;
 }
 
 .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 	.header-title {
 		color: $main-color;
+        text-align: center;
 	}
+
+    .header-title-subtitle {
+        display: inline-block;
+    }
+
+    .information {
+        text-align: center;
+    }
+
+    .information-item {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.footer {
+    margin-top: 15px;
 }
