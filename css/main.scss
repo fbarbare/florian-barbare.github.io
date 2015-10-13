@@ -1,13 +1,37 @@
 $main-color: green;
 
-@import '_icons';
+@media print {
+    @page {
+        size: 330mm 427mm;
+        margin: 14mm;
+    }
+
+    .container {
+        width: 1170px;
+    }
+
+    .no-print,
+    .no-print * {
+        display: none !important;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+
+    .header {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.icon {
+    margin-right: 10px;
+    color: $main-color;
+}
 
 .header {
 	.header-title {
 		color: $main-color;
-	}
-
-	.header-title-subtitle {
-		display: block;
 	}
 }
