@@ -1,0 +1,13 @@
+$main-color: green;
+
+@import '_icons';
+
+.header {
+	.header-title {
+		color: $main-color;
+	}
+
+	.header-title-subtitle {
+		display: block;
+	}
+}
